@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sanwariya Tour & Travel</title>
+    <link rel="stylesheet"  href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="ST&T.css">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand company-name">Sanwariya Tour & Travel</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li> 
+                <li class="nav-item"><a class="nav-link" href="#destination-slider">Destinations</a></li> 
+                <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="overlay"></div>
+    <div class="quote-container">
+        <h1 class="travel-quote">"The journey, not the arrival, matters."</h1>
+    </div>
+</section>
+
+<!-- About Page -->
+<section id="about" class="about-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            
+            <!-- Logo moved to left -->
+            <div class="col-md-6 text-center">
+                <img src="logo.jpg" 
+                    alt="Sanwariya Tour & Travel Logo" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-6">
+                <h2 class="fw-bold">About Us</h2>
+                <p>
+                    Welcome to <b>Sanwariya Tour & Travel!</b> We are your trusted travel partners, 
+                    dedicated to curating unforgettable experiences tailored to your desires. Whether you're looking for a thrilling adventure, 
+                    a romantic honeymoon, or a budget-friendly family getaway, we offer well-planned, customizable travel packages. <br><br>
+
+                    We ensures a seamless journey with top-tier accommodations, and hassle-free ride bookings.  
+                    Explore breathtaking destinations with us and turn your dream vacations into reality.  
+                    <b>Travel with ease, comfort, and joy—only with Sanwariya Tour & Travel!</b>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Destination Page -->
+<div id="destination-slider" class="slide">
+    
+    <!-- Family Trips -->
+    <div class="slider-section">
+        <h2>Family Trips</h2>
+        <div class="slidercontainer">
+            <button class="slider-btn prev-btn" onclick="moveSlide('family-slider', -1)">&#10094;</button>
+            <div class="slider-track" id="family-slider">
+                <div class="slider-card"><img src="Agra.jpg" alt="Agra"><p>Agra</p></div>
+                <div class="slider-card"><img src="ooty.jpg" alt="Ooty"><p>Ooty</p></div>
+                <div class="slider-card"><img src="Mysore.jpg" alt="Mysore"><p>Mysore</p></div>
+                <div class="slider-card"><img src="varanasi.jpg" alt="Varanasi"><p>Varanasi</p></div>
+                <div class="slider-card"><img src="Jaipur.jpg" alt="Jaipur"><p>Jaipur</p></div>
+            </div>
+            <button class="slider-btn next-btn" onclick="moveSlide('family-slider', 1)">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Adventure Trips -->
+    <div class="slider-section">
+        <h2>Adventure Trips</h2>
+        <div class="slidercontainer">
+            <button class="slider-btn prev-btn" onclick="moveSlide('adventure-slider', -1)">&#10094;</button>
+            <div class="slider-track" id="adventure-slider">
+                <div class="slider-card"><img src="ladakh.jpg" alt="Ladakh"><p>Ladakh</p></div>
+                <div class="slider-card"><img src="manali.jpg" alt="Manali"><p>Manali</p></div>
+                <div class="slider-card"><img src="kedarnath.jpg" alt="Kedarnath"><p>Kedarnath</p></div>
+                <div class="slider-card"><img src="meghalaya.jpg" alt="Meghalaya"><p>Meghalaya</p></div>
+                <div class="slider-card"><img src="darjeeling.jpg" alt="Darjeeling"><p>Darjeeling</p></div>
+            </div>
+            <button class="slider-btn next-btn" onclick="moveSlide('adventure-slider', 1)">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Honeymoon Trips -->
+    <div class="slider-section">
+        <h2>Honeymoon Trips</h2>
+        <div class="slidercontainer">
+            <button class="slider-btn prev-btn" onclick="moveSlide('honeymoon-slider', -1)">&#10094;</button>
+            <div class="slider-track" id="honeymoon-slider">
+                <div class="slider-card"><img src="goa.jpg" alt="Goa"><p>Goa</p></div>
+                <div class="slider-card"><img src="shimla.jpg" alt="Shimla"><p>Shimla</p></div>
+                <div class="slider-card"><img src="munnar.jpg" alt="Munnar"><p>Munnar</p></div>
+                <div class="slider-card"><img src="udaipur.jpg" alt="Udaipur"><p>Udaipur</p></div>
+                <div class="slider-card"><img src="kashmir.jpg" alt="Kashmir"><p>Kashmir</p></div>
+            </div>
+            <button class="slider-btn next-btn" onclick="moveSlide('honeymoon-slider', 1)">&#10095;</button>
+        </div>
+    </div>
+</div>
+
+
+<!--testimonials page-->
+<div class="card p-4 mt-4">
+    <h4>Write a Review</h4>
+    <form id="testimonials">
+        <div class="mb-3">
+            <label for="name" class="form-label" style="font-weight: bold;">Your Name</label>
+            <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+        </div>
+            
+        <div class="mb-3">
+            <label for="review" class="form-label" style="font-weight: bold;">Your Review</label>
+            <textarea id="review" class="form-control" rows="4" placeholder="Write your review here..." required></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" style="font-weight: bold">Upload Images or Videos</label>
+            <input type="file" id="mediaUpload" class="form-control" accept="image/*,video/*">
+        </div>
+
+        <button type="submit" class="btn btn-primary"style="font-weight: bold;">Submit Review</button>
+    </form>
+</div>
+
+
+<div id="reviewsContainer" class="mt-5">
+    <h3>Recent Reviews</h3>
+    <div id="reviewList"></div>
+</div>
+</div>    
+<!--Contact page-->
+<section id="contact" class="contact-section">
+    <div class="container mt-5">
+        <h2 class="text-center text-white">Contact Us</h2>
+
+        <div class="contact-wrapper">
+            <!-- Left: Contact Icons -->
+            <div class="contact-box">
+                <div class="contact-icons">
+                    <a href="tel:8852820074" class="contact-link" title="Call">
+                        <i class="fas fa-phone-alt"></i>
+                    </a>
+                    <a href="https://wa.me/8852820074" class="contact-link" target="_blank" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/sanvariya_tour_and_travel" class="contact-link" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right: Google Map -->
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14517.710980361573!2d73.67882474745629!3d24.539876400235624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967efa49e5129d1%3A0x35369214172c7b5e!2sGoverdhan%20Villas%2C%20Sector%2014%2C%20Hiran%20Magri%2C%20Gordhan%20Vilas%20Rural%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1741439965985!5m2!1sen!2sin"
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="ST&T.js"></script>
+</body>
+</html>
+
